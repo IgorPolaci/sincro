@@ -1,0 +1,2 @@
+import {describe,expect,it} from 'vitest';import {customerSchema} from './customer';import {productSchema} from './product';
+describe('schemas',()=>{it('rejeita cliente sem nome',()=>expect(customerSchema.safeParse({type:'PERSON',name:''}).success).toBe(false));it('rejeita preço negativo',()=>expect(productSchema.safeParse({sku:'A',name:'Produto',cost_price:-1,sale_price:10,minimum_stock:0,unit:'UN'}).success).toBe(false))});

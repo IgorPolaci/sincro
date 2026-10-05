@@ -1,0 +1,2 @@
+import { Card } from "@/components/ui/card";import { PageHeader } from "@/components/shared/page-header";import { EmptyState } from "@/components/shared/empty-state";
+export function ModulePlaceholder({title,description,children}:{title:string;description:string;children?:React.ReactNode}){return <><PageHeader title={title} description={description}/>{children??<Card><EmptyState title={`Nenhum dado em ${title.toLowerCase()}`} description="O módulo está preparado e será preenchido conforme a operação gerar dados."/></Card>}</>}

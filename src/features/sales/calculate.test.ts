@@ -1,0 +1,2 @@
+import {describe,expect,it} from 'vitest';import {calculateSale} from './calculate';
+describe('calculateSale',()=>{it('calcula subtotal e desconto com precisão monetária',()=>{expect(calculateSale([{quantity:2,unitPrice:19.9}],4.8)).toEqual({subtotal:39.8,discount:4.8,total:35})});it('rejeita desconto maior que subtotal',()=>{expect(()=>calculateSale([{quantity:1,unitPrice:10}],11)).toThrow('Desconto maior')});it('rejeita venda sem itens',()=>{expect(()=>calculateSale([])).toThrow('precisa de itens')})});

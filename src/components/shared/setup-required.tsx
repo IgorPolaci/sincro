@@ -1,0 +1,3 @@
+import { Database, Terminal } from "lucide-react";
+import { Card } from "@/components/ui/card";
+export function SetupRequired(){return <main className="grid min-h-screen place-items-center p-6"><Card className="max-w-xl p-8"><div className="mb-5 inline-flex rounded-xl bg-emerald-50 p-3 text-primary"><Database/></div><h1 className="text-2xl font-bold">Conecte o Supabase</h1><p className="mt-2 text-muted">A interface está pronta. Copie <code>.env.example</code> para <code>.env.local</code>, informe as chaves do projeto e aplique as migrations.</p><div className="mt-6 flex gap-3 rounded-lg bg-slate-950 p-4 font-mono text-sm text-slate-100"><Terminal className="h-5 w-5 shrink-0"/><span>supabase db push</span></div></Card></main>}

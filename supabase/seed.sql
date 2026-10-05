@@ -1,0 +1,2 @@
+-- Crie primeiro o usuário no Supabase Auth. Em seguida, no SQL Editor administrativo:
+-- select public.bootstrap_organization('Empresa Demo', '<auth-user-uuid>', 'Administrador', 'admin@example.com');

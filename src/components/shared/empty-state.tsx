@@ -1,0 +1,2 @@
+import { Inbox } from "lucide-react";
+export function EmptyState({title="Nenhum registro encontrado",description="Ajuste os filtros ou adicione o primeiro registro."}:{title?:string;description?:string}){return <div className="flex flex-col items-center px-6 py-16 text-center"><div className="mb-4 rounded-xl bg-slate-100 p-3"><Inbox className="h-6 w-6 text-slate-500"/></div><h3 className="font-semibold">{title}</h3><p className="mt-1 max-w-sm text-sm text-muted">{description}</p></div>}

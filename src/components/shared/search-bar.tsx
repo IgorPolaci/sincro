@@ -1,0 +1,2 @@
+import { Search } from "lucide-react";import { Input } from "@/components/ui/input";import { Button } from "@/components/ui/button";
+export function SearchBar({placeholder="Buscar…",defaultValue}:{placeholder?:string;defaultValue?:string}){return <form className="flex w-full max-w-md gap-2"><div className="relative flex-1"><Search className="absolute left-3 top-2.5 h-5 w-5 text-slate-400"/><Input className="pl-10" name="q" defaultValue={defaultValue} placeholder={placeholder}/></div><Button variant="secondary">Buscar</Button></form>}

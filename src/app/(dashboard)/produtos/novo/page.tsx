@@ -1,0 +1,1 @@
+import { Card } from "@/components/ui/card";import { PageHeader } from "@/components/shared/page-header";import { ProductForm } from "@/features/products/product-form";export default function NewProduct(){return <><PageHeader title="Novo produto" description="Cadastre identificação, preços e controle mínimo."/><Card className="p-6"><ProductForm/></Card></>}

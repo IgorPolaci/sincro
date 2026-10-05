@@ -1,0 +1,7 @@
+@import "tailwindcss";
+:root { --background:#f5f7f6; --foreground:#17201d; --primary:#126b50; --primary-dark:#0d523e; --border:#dfe5e2; --muted:#65736e; --card:#ffffff; }
+@theme inline { --color-background:var(--background); --color-foreground:var(--foreground); --color-primary:var(--primary); --color-primary-dark:var(--primary-dark); --color-border:var(--border); --color-muted:var(--muted); --color-card:var(--card); }
+* { border-color:var(--border); }
+body { background:var(--background); color:var(--foreground); font-family:Arial, Helvetica, sans-serif; }
+button, a { -webkit-tap-highlight-color:transparent; }
+::selection { background:#c9eee1; }

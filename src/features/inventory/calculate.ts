@@ -1,0 +1,1 @@
+export function calculateStock(current:number,delta:number){if(!Number.isFinite(current)||!Number.isFinite(delta)||delta===0)throw new Error('Movimento inválido');const result=current+delta;if(result<0)throw new Error('Estoque insuficiente');return result;}

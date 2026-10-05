@@ -1,0 +1,3 @@
+export type SaleLine={quantity:number;unitPrice:number;discount?:number};
+export function calculateSale(lines:SaleLine[],discount=0){if(!lines.length)throw new Error('A venda precisa de itens');if(discount<0)throw new Error('Desconto inválido');const subtotal=lines.reduce((sum,line)=>{if(line.quantity<=0||line.unitPrice<0||(line.discount??0)<0)throw new Error('Item inválido');return sum+line.quantity*line.unitPrice-(line.discount??0)},0);const total=subtotal-discount;if(total<0)throw new Error('Desconto maior que o subtotal');return {subtotal:roundMoney(subtotal),discount:roundMoney(discount),total:roundMoney(total)};}
+function roundMoney(value:number){return Math.round((value+Number.EPSILON)*100)/100}
