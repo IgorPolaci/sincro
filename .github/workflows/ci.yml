@@ -17,3 +17,13 @@ jobs:
       - run: npm run typecheck
       - run: npm run test
       - run: npm run build
+  database:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: supabase/setup-cli@v1
+        with:
+          version: 2.22.6
+      - run: supabase start
+      - run: supabase db reset
+      - run: supabase test db

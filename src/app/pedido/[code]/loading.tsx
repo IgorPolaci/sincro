@@ -1,0 +1,1 @@
+export default function OrderLoading() { return <main className="mx-auto max-w-2xl space-y-4 p-6"><div className="h-12 animate-pulse rounded bg-slate-200" /><div className="h-80 animate-pulse rounded-xl bg-slate-100" /></main>; }

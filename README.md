@@ -42,10 +42,17 @@ O plano e os critérios de aceite estão em [docs/IMPLEMENTATION_PLAN.md](docs/I
 ## Estado desta entrega
 
 - Base técnica, CI, autenticação SSR, layout e dashboard
-- Modelo de dados completo do MVP com isolamento por organização
+- Modelo multiunidade com Assistência Técnica e Loja/Delivery na mesma organização
+- Estoque e caixa independentes por segmento, com movimentações auditadas
 - CRUD inicial de clientes e produtos; estoque transacional
-- Estruturas de orçamento, venda, cancelamento, pagamento e financeiro
-- Auditoria, lixeira, importação, backup, relatórios e rotas administrativas
+- Ordem de serviço com entrada, status, histórico, serviços, peças, check-list e fotos privadas
+- Faturamento e estorno de O.S. com pagamentos, caixa, financeiro e peças na mesma transação
+- Documentos auditados de O.S. em A4, térmica 80 mm e térmica 58 mm
+- PDV com pagamentos combinados, venda/cancelamento transacionais e conversão de orçamentos
+- Gerenciamento de e-commerce com publicação, conteúdo, preço online, promoções, imagens, identidade visual, destaques, SEO e complementos
+- Catálogo público responsivo com busca, filtros, carrinho por variação, checkout, reserva de estoque, Kanban de pedidos, áreas/taxas, cupons e fidelidade
+- Transferência auditada entre estoques, indicadores e exportação CSV auditada
+- Auditoria, lixeira, importação, backup e rotas administrativas
 - Testes unitários das regras críticas iniciais e suíte E2E configurada
 
-Os jobs externos de backup, o processador assíncrono de importação, credenciais reais, deploy e o teste de restauração dependem da infraestrutura do ambiente e devem ser concluídos nos respectivos marcos.
+Pix com QR dinâmico/webhook, integração automática com WhatsApp, mapas, impressão silenciosa via QZ Tray, jobs externos de backup, processador assíncrono de importação, deploy e teste de restauração dependem de provedores, credenciais ou infraestrutura e permanecem nos próximos marcos.

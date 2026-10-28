@@ -1,0 +1,1 @@
+export default function StoreLoading() { return <main className="min-h-screen bg-slate-50"><div className="h-64 animate-pulse bg-emerald-950" /><div className="mx-auto grid max-w-7xl gap-5 p-6 sm:grid-cols-3">{[1,2,3,4,5,6].map(item=><div key={item} className="h-72 animate-pulse rounded-xl bg-white" />)}</div></main>; }
